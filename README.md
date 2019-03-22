@@ -4,21 +4,67 @@ Demo project for the GraphQL lunch & learn which took place on March 2019 at Pel
 
 ### Requirements
 
-...
+Python 3
+Node.js >= v8
 
 ### Setup & Installation
 
-...
+#### RecipesAPI
 
-### Development
+Installation:
 
-...
+```
+cd recipes
+. venv/bin/activate
+pip install -r requirements.txt
+```
 
-### Presentation Info
+Running the server:
+
+```
+export FLASK_APP=server.py
+flask run --port=8000
+```
+
+Send requests to `localhost:8000/`
+
+#### FridgeAPI
+
+Installation
+
+```
+cd fridge
+npm install
+```
+
+Running the server:
+
+```
+npm start
+```
+
+Send requests to `localhost:8001/`
+
+#### MealsAPI
+
+Installation
+
+```
+cd meals
+npm install
+```
+
+Running the server:
+
+```
+npm start
+```
+
+Send queries to `localhost:8002/graphql`
+
+### Presentation Notes
 
 We want to demonstrate how graphql can be used to replace REST apis (with new Graph API)
-
-**Notes**:
 
 External Microservices:
 RecipesAPI => Flask App (Python)
