@@ -28,6 +28,6 @@ app.get('/', (req, res) => {
   res.status(200).send('Fridge API is running.');
 });
 
-app.get('/inventory/getAll', (req, res) => {
+app.get('/api/inventory/getAll', (req, res) => {
   res.json(inventory);
 });

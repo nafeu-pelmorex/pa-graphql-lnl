@@ -46,6 +46,6 @@ recipes = [
 def root():
     return 'Recipes API is running.'
 
-@app.route('/recipes/getAll',  methods=['GET'])
+@app.route('/api/recipes/getAll',  methods=['GET'])
 def get_recipes():
     return jsonify(recipes)
