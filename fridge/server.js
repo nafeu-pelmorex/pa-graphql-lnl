@@ -12,6 +12,7 @@ const inventory = [
   'bread',
   'garlic',
   'butter',
+  'pasta',
 ];
 
 server.listen(process.env.PORT || 8001, () => {

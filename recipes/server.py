@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 recipes = [
     {
-        'name': 'Pizza',
+        'name': 'pizza',
         'ingredients': ['dough', 'tomato sauce', 'cheese'],
         'instructions': [
             'Form dough',
@@ -14,7 +14,7 @@ recipes = [
         ],
     },
     {
-        'name': 'Pasta',
+        'name': 'pasta',
         'ingredients': ['pasta', 'tomato sauce', 'cheese'],
         'instructions': [
             'Boil pasta',
@@ -24,7 +24,7 @@ recipes = [
         ],
     },
     {
-        'name': 'Grilled Cheese',
+        'name': 'grilled cheese',
         'ingredients': ['bread', 'cheese', 'butter'],
         'instructions': [
             'Put bread in pan with butter',
@@ -33,7 +33,7 @@ recipes = [
         ],
     },
     {
-        'name': 'Garlic Bread',
+        'name': 'garlic bread',
         'ingredients': ['bread', 'cheese', 'garlic', 'butter'],
         'instructions': [
             'Put bread in baking sheet with butter cheese and garlic',
