@@ -5,7 +5,16 @@ const bodyParser = require('body-parser');
 const app = express();
 const server = http.Server(app);
 
-server.listen(process.env.PORT || 8000, () => {
+const inventory = [
+  'dough',
+  'tomato sauce',
+  'cheese',
+  'bread',
+  'garlic',
+  'butter',
+];
+
+server.listen(process.env.PORT || 8001, () => {
   console.log(`[ server.js ] Listening on port ${server.address().port}`);
 });
 
@@ -16,7 +25,9 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.json({
-    greeting: 'Hello world!',
-  });
+  res.status(200).send('Fridge API is running.');
+});
+
+app.get('/inventory/getAll', (req, res) => {
+  res.json(inventory);
 });
