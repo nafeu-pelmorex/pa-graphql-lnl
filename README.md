@@ -25,7 +25,7 @@ RecipesAPI => Flask App (Python)
 FridgeAPI => Express App (Node.js)
 
 Main App:
-MealInquiryAPI => GraphQL API Gateway (Node.js)
+MealsAPI => GraphQL API Gateway (Node.js)
 
 **RecipesAPI**
 
