@@ -1,0 +1,63 @@
+1. Intro
+
+GraphQL Lunch & Learn
+Nafeu Nasir (Full Stack Developer - Console Team)
+
+2. What is GraphQL?
+
+Graph -> thinking of a problem in terms of nodes and edges
+QL -> query language (a way of asking for data)
+
+GraphQL -> a way of asking for data in terms of nodes and edges
+
+4. Why should you care?
+
+It replaces REST Apis
+
+- the cool kids are using it: Facebook, Github, Paypal, Product Hunt, Shopify, and many more
+- it can be used in conjunction with existing technology
+- it claims to be highly performant, more maintainable, more scalable and more efficient in place of REST
+
+Built by Facebook in 2012, released publicly in 2015
+
+5. Goodbye Monolith
+
+- the industry is moving towards microservices and hexagonal architecture over monolithic architecture
+- we have a huge variation in experiences now (mobile, tablet, IOT device, desktop, voice assistant) all querying the same resources
+- we have Third Party APIs that do certain challenging things really well so that we don't have to anymore
+  - Twilio: handles texting & automated voice calls from your apps
+  - Braintree: handles monetary transactions
+  - Auth0: handles authentication and user account management
+  - Goole/Amazon/IBM/Microsoft Cloud: various AI related
+
+
+---
+
+We want to demonstrate how graphql can be used to replace REST apis (with new Graph API)
+
+RecipesAPI => Flask App (Python)
+FridgeAPI => Express App (Node.js)
+MealsAPI => GraphQL API Gateway (Node.js)
+
+Questions to Answer:
+
+- Difference between REST and GraphQL
+
+The core difference between GraphQL and REST can be boiled down as follows:
+
+REST has a set of endpoints that each return fixed data structures
+GraphQL has a single endpoint that returns flexible data structures
+
+- What is monolithic architecture?
+- What are microservices?
+- What are advantages of monolith versus microservices?
+
+Resources:
+
+https://www.google.ca/imgres?imgurl=https%3A%2F%2Fd1.awsstatic.com%2FDeveloper%2520Marketing%2Fcontainers%2Fmonolith_1-monolith-microservices.70b547e30e30b013051d58a93a6e35e77408a2a8.png&imgrefurl=https%3A%2F%2Faws.amazon.com%2Fmicroservices%2F&docid=v5_ybMDNzBRAKM&tbnid=CENJBfGhoq0TSM%3A&vet=10ahUKEwiG9_z4iZThAhUFb60KHS0IDPMQMwh0KAowCg..i&w=491&h=301&bih=978&biw=1920&q=microservices&ved=0ahUKEwiG9_z4iZThAhUFb60KHS0IDPMQMwh0KAowCg&iact=mrc&uact=8
+
+https://www.prisma.io/blog/how-to-wrap-a-rest-api-with-graphql-8bf3fb17547d
+
+https://medium.freecodecamp.org/so-whats-this-graphql-thing-i-keep-hearing-about-baf4d36c20cf
+
+https://blog.apollographql.com/how-do-i-graphql-2fcabfc94a01
